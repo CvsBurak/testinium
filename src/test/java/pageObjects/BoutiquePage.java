@@ -5,6 +5,7 @@ import java.util.Random;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Wait;
@@ -29,10 +30,11 @@ public class BoutiquePage {
 	
 	
 	public void clickRandomItem() {
+		Actions action = new Actions(driver);
 		int itemNum = items.size();
 		Random rand = new Random();
 		int randomNum = rand.nextInt((itemNum - 1) + 1) + 1;
-		items.get(randomNum).click();		
+		action.moveToElement(items.get(randomNum)).click().perform();		
 	}
 	
 	public String getTitle() {

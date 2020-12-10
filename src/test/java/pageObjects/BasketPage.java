@@ -34,9 +34,9 @@ public class BasketPage {
 		return count.getText();
 	}
 	
-	public boolean addOneMoreEnabled() {
+	public String addOneMoreEnabled() {
 		wait.WaitForElement(addOne, 5);
-		boolean canClickable = addOne.isEnabled();
+		String canClickable = addOne.getAttribute("class");
 		return canClickable;
 
 	}

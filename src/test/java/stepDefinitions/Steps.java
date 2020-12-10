@@ -3,7 +3,6 @@ package stepDefinitions;
 import static org.junit.Assert.assertThat;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.hamcrest.Matcher;
@@ -22,6 +21,8 @@ import pageObjects.ProductPage;
 import pageObjects.BoutiquePage;
 import pageObjects.BasketPage;
 import utilities.ScenarioContext;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 public class Steps {
 	
@@ -32,6 +33,7 @@ public class Steps {
 	public BoutiquePage boutiqueP;
 	public BasketPage basketP;
 	public ScenarioContext context;
+	public static Logger logger;
 	
 	@Given("the home page of trendyol is displayed")
 	public void the_home_page_of_hepsiburada_is_displayed() throws InterruptedException {
@@ -46,13 +48,17 @@ public class Steps {
         options.addArguments("--no-sandbox");
 		driver = new ChromeDriver(options);
 		
-		
+		logger = Logger.getLogger("trendyol");
+		PropertyConfigurator.configure("Log4j.properties");
 		hp = new HomePage(driver);
 		lp = new LoginPage(driver);
 		boutiqueP = new BoutiquePage(driver);
 		productP = new ProductPage(driver);
 		basketP = new BasketPage(driver);
 		context = new ScenarioContext();
+		
+		logger.info("********** Launching Browser **********");
+		logger.info("Going to trendyol's homepage");
 		driver.get("https://www.trendyol.com");
 		hp.clickClosePopUp();
 		
@@ -65,6 +71,7 @@ public class Steps {
 
 	@When("the user clicks to login button")
 	public void the_user_clicks_to_login_button() throws InterruptedException {
+		logger.info("Going to login page");
 		hp.clickLogin();
 	}
 	
@@ -76,12 +83,15 @@ public class Steps {
 
 	@When("the user enters username {string} and password {string}")
 	public void the_user_enters_username_and_password(String username, String password) {
+		String userInfo = String.format("Entering username %s and password %s", username, password);
+		logger.info(userInfo);
 		lp.setUserName(username);
 		lp.setPassword(password);
 	}
 
 	@When("Clicks to login button")
 	public void clicks_to_login_button() throws InterruptedException {
+		logger.info("Logging in");
 		lp.clickLogin();
 		Thread.sleep(500);
 	}
@@ -89,16 +99,19 @@ public class Steps {
 	@Then("User must be on home page and login text should change to {string}")
 	public void user_must_be_on_home_page_and_login_text_should_change_to(String string) {
 		if (driver.getPageSource().contains("E-posta adresiniz ve/veya şifreniz hatalı.")) {
+			logger.info("Email or password is wrong, terminating the test");
 			driver.close();
 			Assert.assertTrue(false);
 		}
 		else {
+			logger.info("Logged in succesfully");
 			Assert.assertEquals(string, hp.isLogged());
 		}
 	}
 	
 	@Then("Close driver")
 	public void close_driver() {
+		logger.info("************* Test finished *************");
 		driver.quit();
 	}
 	
@@ -107,6 +120,8 @@ public class Steps {
 	
 	@When("user writes {string} on the search bar")
 	public void writes_on_the_search_bar(String string) throws InterruptedException {
+		String search = String.format("Searching %s", string);
+		logger.info(search);
 	    hp.setSearchItem(string);
 	    Thread.sleep(500);
 	}
@@ -123,6 +138,7 @@ public class Steps {
 
 	@When("the user selects random product on the page")
 	public void the_user_selects_random_product_on_the_page() throws InterruptedException {
+		logger.info("Selecting random product");
 	    boutiqueP.clickRandomItem();
 	}
 
@@ -133,13 +149,17 @@ public class Steps {
 
 	@When("user adds item to the basket")
 	public void user_adds_item_to_the_basket() throws InterruptedException {
+		logger.info("Checking if the product is avaible to buy");
 		String basket = productP.addToCartAvaible();
+		System.out.print(basket);
 	    if (basket.contains("Sepet")){
+	    	logger.info("Adding product to basket");
 	    	productP.addToCart();
 	    	String price = productP.itemPrice();
 		    context.setContext(Context.PRODUCT_PRICE, price);
 		    Thread.sleep(3000);
 	    } else {
+	    	logger.info("Product is not avaible to buy, terminating the test");
 	    	driver.close();
 	    }
 	    
@@ -147,17 +167,20 @@ public class Steps {
 
 	@Then("basket count must increased one")
 	public void basket_count_must_increased_one() {
-		Assert.assertEquals("1", productP.itemCount());
+		productP.hoverBasket();
+		String count = productP.itemCount();
+		Assert.assertTrue(count.contains("1"));
 	}
 
 	@When("user clicks the basket and goes to basket page")
 	public void user_clicks_the_basket_and_goes_to_basket_page() throws InterruptedException {
+		logger.info("Going to basket page");
 	    productP.clickBasket();
-	    Thread.sleep(1000);
 	}
 
 	@Then("user must see the value of item price in the products page and the baskets page must be equal")
 	public void prices_equal() {
+		basketP.productCount();
 		String source = driver.getPageSource();
 		String price = (String) context.getContext(Context.PRODUCT_PRICE);
 		boolean result = source.contains(price);
@@ -167,11 +190,16 @@ public class Steps {
 
 	@When("user increase the product count to two")
 	public void user_increase_the_product_count_to_two() throws InterruptedException {
-	    if (basketP.addOneMoreEnabled()) {
+		logger.info("Checking if product is addable for more");
+		String addOne = basketP.addOneMoreEnabled();
+		System.out.print(addOne);
+	    if (!addOne.contains("passive")) {
+	    	logger.info("Increasing quantity of product");
 	    	basketP.addOneMore();
-	    	Thread.sleep(500);
+	    	Thread.sleep(1500);
 	    } else {
-	    	Assert.assertTrue(basketP.addOneMoreEnabled());
+	    	logger.info("You can only buy one, termimating the test");
+	    	driver.close();
 	    }
 	}
 

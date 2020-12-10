@@ -1,0 +1,413 @@
+2020-12-10 10:50:15,543  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 10:50:15,546  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 10:50:23,292  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 10:50:24,918  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 10:50:25,992  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 10:50:26,457  INFO [main] trendyol:155 - Adding product to basket
+ 2020-12-10 10:51:02,900  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 10:51:02,904  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 10:51:06,578  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 10:51:08,535  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 10:51:09,680  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 10:51:09,722  INFO [main] trendyol:155 - Adding product to basket
+ 2020-12-10 10:51:13,351  INFO [main] trendyol:174 - Going to basket page
+ 2020-12-10 10:51:15,372  INFO [main] trendyol:190 - Checking if product is addable for more
+ 2020-12-10 10:51:15,410  INFO [main] trendyol:192 - Increasing quantity of product
+ 2020-12-10 10:59:24,653  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 10:59:24,667  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 10:59:27,282  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 10:59:29,092  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 10:59:30,716  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 10:59:30,759  INFO [main] trendyol:155 - Adding product to basket
+ 2020-12-10 11:00:54,727  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:00:54,729  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:00:57,998  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:00:59,607  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:01:00,985  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:01:01,035  INFO [main] trendyol:155 - Adding product to basket
+ 2020-12-10 11:05:53,280  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:05:53,283  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:05:56,262  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:05:57,999  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:05:58,988  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:05:59,024  INFO [main] trendyol:155 - Adding product to basket
+ 2020-12-10 11:07:34,400  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:07:34,403  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:07:38,918  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:07:40,866  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:07:41,851  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:07:41,887  INFO [main] trendyol:155 - Adding product to basket
+ 2020-12-10 11:11:11,723  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:11:11,737  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:11:15,339  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:11:17,073  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:11:18,726  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:11:18,776  INFO [main] trendyol:155 - Adding product to basket
+ 2020-12-10 11:11:22,060  INFO [main] trendyol:176 - Going to basket page
+ 2020-12-10 11:11:24,438  INFO [main] trendyol:192 - Checking if product is addable for more
+ 2020-12-10 11:11:24,474  INFO [main] trendyol:196 - Increasing quantity of product
+ 2020-12-10 11:13:47,899  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:13:47,903  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:13:54,028  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:13:55,709  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:13:57,091  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:13:57,150  INFO [main] trendyol:155 - Adding product to basket
+ 2020-12-10 11:14:00,454  INFO [main] trendyol:176 - Going to basket page
+ 2020-12-10 11:14:02,591  INFO [main] trendyol:192 - Checking if product is addable for more
+ 2020-12-10 11:14:02,629  INFO [main] trendyol:199 - You can only buy one, termimating the test
+ 2020-12-10 11:18:40,789  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:18:40,791  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:18:48,765  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:18:50,783  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:18:51,822  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:18:52,178  INFO [main] trendyol:155 - Adding product to basket
+ 2020-12-10 11:18:55,517  INFO [main] trendyol:176 - Going to basket page
+ 2020-12-10 11:18:57,655  INFO [main] trendyol:192 - Checking if product is addable for more
+ 2020-12-10 11:18:57,693  INFO [main] trendyol:196 - Increasing quantity of product
+ 2020-12-10 11:20:07,820  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:20:07,822  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:20:10,671  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:20:12,609  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:20:13,851  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:25:05,050  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:25:05,052  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:25:08,338  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:25:10,175  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:25:11,707  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:27:38,078  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:27:38,087  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:27:45,875  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:27:47,796  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:27:49,414  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:27:49,465  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 11:29:00,514  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:29:00,516  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:29:07,809  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:29:09,509  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:29:10,553  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:29:11,143  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 11:29:15,165  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 11:29:17,441  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 11:29:17,476  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 11:29:43,788  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:29:43,790  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:29:51,129  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:29:52,872  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:29:53,922  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:29:54,274  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 11:29:58,225  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 11:30:00,324  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 11:30:00,360  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 11:30:10,870  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:30:10,872  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:30:14,015  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:30:15,790  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:30:16,831  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:30:17,444  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 11:30:21,461  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 11:30:23,677  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 11:30:23,713  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 11:30:49,156  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:30:49,158  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:30:56,633  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:30:58,291  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:30:59,283  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:33:29,187  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:33:29,189  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:33:37,191  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:33:39,076  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:33:40,961  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:33:41,002  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 11:34:51,603  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:34:51,605  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:34:59,605  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:35:01,146  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:35:02,242  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:35:02,631  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 11:35:06,048  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 11:35:08,411  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 11:35:08,446  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 11:35:17,914  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:35:17,916  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:35:21,027  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:35:22,700  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:35:23,673  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:35:23,712  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 11:35:28,065  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 11:35:30,259  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 11:35:30,295  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 11:35:48,729  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:35:48,731  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:35:55,847  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:35:57,607  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:35:58,960  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:35:59,323  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 11:36:03,291  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 11:36:05,404  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 11:36:05,440  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 11:36:38,870  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:36:38,871  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:36:43,914  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:36:45,814  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:36:46,841  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:36:47,282  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 11:36:51,402  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 11:36:53,540  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 11:36:53,576  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 11:37:02,004  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:37:02,010  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:37:06,746  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:37:08,409  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:37:09,728  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:37:10,068  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 11:37:14,052  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 11:37:16,219  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 11:37:16,255  INFO [main] trendyol:197 - Increasing quantity of product
+ 2020-12-10 11:37:56,710  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:37:56,712  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:38:01,434  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:38:03,279  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:39:40,512  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:39:40,514  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:39:45,110  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:39:46,784  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:39:48,682  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:39:48,725  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 11:39:52,937  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 11:39:54,865  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 11:39:54,901  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 11:40:13,177  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:40:13,179  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:40:18,059  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:40:19,795  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:40:20,972  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:40:21,357  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 11:40:25,294  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 11:40:27,586  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 11:40:27,622  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 11:40:35,994  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:40:35,996  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:40:38,436  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:40:40,274  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:40:41,459  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:50:50,277  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:50:50,281  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:50:55,072  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:50:56,849  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:50:58,698  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:50:58,741  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 11:51:02,767  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 11:51:04,853  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 11:51:04,890  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 11:51:12,305  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:51:12,307  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:51:16,759  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:51:18,475  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:51:20,120  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:51:20,158  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 11:51:24,310  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 11:51:26,494  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 11:51:26,530  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 11:51:38,168  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:51:38,169  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:51:42,941  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:51:44,555  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:51:45,724  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:51:45,766  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 11:51:50,163  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 11:51:52,277  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 11:51:52,321  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 11:52:01,860  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:52:01,862  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:52:05,494  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:52:07,219  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:52:08,605  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:52:08,647  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 11:52:13,174  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 11:52:25,304  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 11:52:25,342  INFO [main] trendyol:197 - Increasing quantity of product
+ 2020-12-10 11:53:10,158  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:53:10,160  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:53:15,182  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:53:16,995  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:53:18,665  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:53:18,731  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 11:53:22,669  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 11:56:21,791  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 11:56:21,793  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 11:56:27,144  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 11:56:29,202  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 11:56:31,061  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 11:56:31,198  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 11:56:35,283  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 11:56:37,485  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 11:56:37,526  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 12:02:00,830  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:02:00,832  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:02:05,647  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:02:07,588  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:02:08,932  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:02:09,234  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 12:02:12,617  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 12:02:14,767  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 12:02:14,803  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 12:05:11,422  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:05:11,424  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:05:16,070  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:05:17,774  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:05:19,429  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:05:19,468  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 12:05:23,478  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 12:05:25,502  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 12:05:25,540  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 12:05:34,950  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:05:34,952  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:05:39,358  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:05:41,042  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:05:42,398  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:05:42,438  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 12:05:46,818  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 12:05:48,677  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 12:05:48,723  INFO [main] trendyol:197 - Increasing quantity of product
+ 2020-12-10 12:05:50,342  INFO [main] trendyol:114 - ************* Test finished *************
+ 2020-12-10 12:06:06,156  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:06:06,157  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:06:10,660  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:06:12,284  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:06:13,354  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:06:13,485  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 12:06:17,713  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 12:06:19,505  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 12:06:19,538  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 12:06:29,123  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:06:29,125  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:06:33,708  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:06:35,365  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:06:36,421  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:06:36,907  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 12:06:40,861  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 12:06:43,105  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 12:06:43,140  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 12:06:59,778  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:06:59,780  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:07:04,622  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:07:06,288  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:07:07,646  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:07:07,981  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 12:07:11,996  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 12:07:14,150  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 12:07:14,194  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 12:07:32,990  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:07:32,992  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:07:36,029  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:07:37,647  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:07:38,953  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:07:39,300  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 12:08:04,310  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:08:04,312  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:08:07,602  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:08:09,180  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:08:10,429  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:08:10,465  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 12:08:14,884  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 12:08:16,941  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 12:08:17,220  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 12:08:34,662  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:08:34,664  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:08:39,505  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:08:41,197  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:08:42,576  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:08:42,850  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 12:08:46,932  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 12:08:48,559  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 12:08:48,594  INFO [main] trendyol:197 - Increasing quantity of product
+ 2020-12-10 12:08:50,194  INFO [main] trendyol:114 - ************* Test finished *************
+ 2020-12-10 12:08:58,430  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:08:58,432  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:09:05,158  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:09:06,902  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:09:08,156  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:09:08,196  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 12:09:12,813  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 12:09:14,523  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 12:09:14,557  INFO [main] trendyol:197 - Increasing quantity of product
+ 2020-12-10 12:09:16,176  INFO [main] trendyol:114 - ************* Test finished *************
+ 2020-12-10 12:09:23,589  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:09:23,591  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:09:27,162  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:09:28,978  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:09:31,095  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:09:31,143  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 12:09:35,122  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 12:09:37,241  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 12:09:37,275  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 12:09:54,843  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:09:54,846  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:09:59,441  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:10:01,002  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:10:02,531  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:10:02,930  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 12:10:06,869  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 12:10:08,754  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 12:10:08,856  INFO [main] trendyol:197 - Increasing quantity of product
+ 2020-12-10 12:10:10,467  INFO [main] trendyol:114 - ************* Test finished *************
+ 2020-12-10 12:10:23,834  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:10:23,836  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:10:28,373  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:10:30,029  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:10:31,338  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:10:32,078  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 12:11:10,822  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:11:10,824  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:11:15,343  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:11:17,290  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:11:18,938  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:11:19,386  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 12:11:23,421  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 12:11:25,314  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 12:11:25,351  INFO [main] trendyol:197 - Increasing quantity of product
+ 2020-12-10 12:11:26,997  INFO [main] trendyol:114 - ************* Test finished *************
+ 2020-12-10 12:11:46,939  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:11:46,941  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:11:49,943  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:11:51,804  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:11:53,076  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:11:53,420  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 12:11:57,495  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 12:12:00,034  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 12:12:00,071  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 12:12:19,892  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:12:19,894  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:12:24,440  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:12:25,911  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:12:26,978  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:12:27,016  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 12:12:31,258  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 12:12:33,139  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 12:12:33,176  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 12:12:54,296  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:12:54,298  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:12:57,493  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:12:59,092  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:13:00,775  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:13:00,980  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 12:13:05,147  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 12:13:07,351  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 12:13:07,385  INFO [main] trendyol:201 - You can only buy one, termimating the test
+ 2020-12-10 12:13:33,720  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:13:33,721  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:13:38,310  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:13:40,219  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:13:41,669  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:13:41,927  INFO [main] trendyol:156 - Adding product to basket
+ 2020-12-10 12:13:45,960  INFO [main] trendyol:177 - Going to basket page
+ 2020-12-10 12:13:47,793  INFO [main] trendyol:193 - Checking if product is addable for more
+ 2020-12-10 12:13:47,905  INFO [main] trendyol:197 - Increasing quantity of product
+ 2020-12-10 12:13:49,519  INFO [main] trendyol:114 - ************* Test finished *************
+ 2020-12-10 12:14:12,654  INFO [main] trendyol:60 - ********** Launching Browser **********
+ 2020-12-10 12:14:12,661  INFO [main] trendyol:61 - Going to trendyol's homepage
+ 2020-12-10 12:14:17,861  INFO [main] trendyol:124 - Searching bilgisayar
+ 2020-12-10 12:14:19,780  INFO [main] trendyol:141 - Selecting random product
+ 2020-12-10 12:14:21,617  INFO [main] trendyol:152 - Checking if the product is avaible to buy
+ 2020-12-10 12:14:21,745  INFO [main] trendyol:156 - Adding product to basket
+ 

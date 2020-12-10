@@ -61,7 +61,7 @@ public class HomePage {
     
     public void clickClosePopUp() {
     	try {
-    		wait.WaitForElement(closePopUp, 5);
+    		wait.WaitForElement(closePopUp, 2);
     		closePopUp.click();
     	}
     	catch (Exception e){

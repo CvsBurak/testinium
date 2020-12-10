@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -25,7 +26,7 @@ public class ProductPage {
 	@FindBy(className = "add-to-bs-tx")
     WebElement btnAddToCartTxt;
 	
-	@FindBy(id = "basketItemCount")
+	@FindBy(xpath = "//*[@id=\"basketPreviewcontent\"]/div[1]/div[1]/p")
 	WebElement itemCount;
 	
 	@FindBy(xpath = "//*[@class='pr-new-br']/span")
@@ -51,8 +52,23 @@ public class ProductPage {
 	}
 	
 	public String addToCartAvaible() {
-		wait.WaitForElement(btnAddToCartTxt, 5);
-		return btnAddToCartTxt.getText();
+		boolean visibility = false;
+		try {
+    		wait.WaitForElement(btnAddToCartTxt, 2);
+    		visibility = true;
+    	}
+    	catch (Exception e){
+    		System.out.println("No Element");
+    	}
+		
+		if (visibility) {
+			return btnAddToCartTxt.getText();
+		} else {
+			return btnAddToCart.getText();
+		}
+    	
+    	
+		
 	}
 	
 	public String itemCount() {
@@ -66,6 +82,7 @@ public class ProductPage {
 	}
 	
 	public String itemPrice() {
+		wait.WaitForElement(lastDiscountPrice, 3);
 		if (lastDiscountPrice.isDisplayed()) {
 			return lastDiscountPrice.getText();
 		}
@@ -79,6 +96,11 @@ public class ProductPage {
 	
 	public void clickBasket() {
 		basketBtn.click();
+	}
+	
+	public void hoverBasket() {
+		Actions action = new Actions(driver);
+		action.moveToElement(basketBtn).perform();
 	}
 	
 	public String getItemInfo() {
