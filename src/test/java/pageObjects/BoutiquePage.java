@@ -7,45 +7,40 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utilities.Wait;
 
 public class BoutiquePage {
 	
 	public WebDriver driver;
+	public Wait wait;
 	
 	public BoutiquePage(WebDriver rdriver)
 	{
 		driver = rdriver;
 		PageFactory.initElements(rdriver, this);
+		wait = new Wait(rdriver);
 	}
 	
-	@FindBy(className = "search-item")
+	@FindBy(className = "p-card-wrppr")
 	List<WebElement> items;
 	
-	@FindBy(className = "keyword")
-	WebElement item;
+	@FindBy(xpath = "//*[@id=\"search-app\"]/div/div[1]/div[2]/div[1]/div[1]/div/h1")
+	WebElement title;
 	
-	@FindBy(className = "product-title")
-	List<WebElement> title;
-	
-	public String itemName() {
-		return item.getText();
-	}
 	
 	public void clickRandomItem() {
 		int itemNum = items.size();
 		Random rand = new Random();
 		int randomNum = rand.nextInt((itemNum - 1) + 1) + 1;
 		items.get(randomNum).click();		
+	}
+	
+	public String getTitle() {
+		wait.WaitForElement(title, 5);
+		return title.getText();
+	}
+	
 
-	}
-	
-	public List<WebElement> clickItem() {
-		return items;
-	}
-	
-	public List<WebElement> titleName() {
-		return title;
-	}
 	
 	
 

@@ -2,6 +2,9 @@ package pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+
+import utilities.Wait;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
@@ -9,44 +12,40 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePage {
 	public WebDriver driver;
+	public Wait wait;
 	
 	public HomePage(WebDriver rdriver)
 	{
 		driver = rdriver;
 		PageFactory.initElements(rdriver, this);
+		wait = new Wait(rdriver);
 	}
 	
-	@FindBy(id = "myAccount")
-	WebElement myAccountBtn;
-	
-    @FindBy(id = "login")
+	@FindBy(className = "login-container")
 	WebElement loginBtn;
-    
-    @FindBy(xpath = "//*[@id=\"SearchBoxOld\"]/div/div/div[1]/div[2]/input")
-    WebElement searchInput;
 	
-    @FindBy(xpath = "//*[@id=\"SearchBoxOld\"]/div/div/div[2]")
-    WebElement searchBtn;
-    
-    @FindBy(xpath = "//*[@id='myAccount']/span/a/span[1]")
-    WebElement myAccountTxt;
-    
-    @FindBy(xpath = "//*[@class='sf-MenuItems-1Sj7h']/li[9]")
-    WebElement hobi;
-    
-    @FindBy(xpath = "//span[text()='Uzaktan Kumandalı Araçlar']")
-    WebElement rcCar;
-    
-    public void clickMyAccount() {
-    	Actions action = new Actions(driver);
-    	action.moveToElement(myAccountBtn).perform();
-    }
+	@FindBy(id = "logged-in-container")
+	WebElement  loggedInTxt;
+	
+	@FindBy(className = "search-box")
+	WebElement searchInput;
+	
+	@FindBy(className = "search-icon")
+	WebElement searchBtn;
+	
+	@FindBy(xpath = "/html/body/div[8]/div/div/a")
+	WebElement closePopUp;
+	
+	@FindBy(xpath = "/html/body/div[7]/div/div/a")
+	WebElement closePopUp1;
+	
     
     public void clickLogin() {
     	loginBtn.click();
     }
     
     public void setSearchItem(String item) {
+    	wait.WaitForElement(searchInput, 5);
     	searchInput.clear();
     	searchInput.sendKeys(item);
     }
@@ -56,15 +55,29 @@ public class HomePage {
     }
     
     public String isLogged() {
-    	return myAccountTxt.getText();
+    	wait.WaitForElement(loggedInTxt, 5);
+    	return loggedInTxt.getText();
     }
     
-    public void clickHobi() {
-    	hobi.click();
+    public void clickClosePopUp() {
+    	try {
+    		wait.WaitForElement(closePopUp, 5);
+    		closePopUp.click();
+    	}
+    	catch (Exception e){
+    		System.out.println("No Element");
+    	}
+    	
+    	try {
+    		closePopUp1.click();
+    	}
+    	catch (Exception e){
+    		System.out.println("No Element");
+    	}
+    	
+    	
     }
     
-    public void clickRC() {
-    	rcCar.click();
-    }
+
 
 }

@@ -13,12 +13,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import enums.Context;
 import io.cucumber.java.en.*;
 import junit.framework.Assert;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.ProductPage;
 import pageObjects.BoutiquePage;
+import pageObjects.BasketPage;
+import utilities.ScenarioContext;
 
 public class Steps {
 	
@@ -26,10 +29,12 @@ public class Steps {
 	public HomePage hp;
 	public LoginPage lp;
 	public ProductPage productP;
-	public BoutiquePage productsP;
+	public BoutiquePage boutiqueP;
+	public BasketPage basketP;
+	public ScenarioContext context;
 	
-	@Given("the home page of hepsiburada is displayed")
-	public void the_home_page_of_hepsiburada_is_displayed() {
+	@Given("the home page of trendyol is displayed")
+	public void the_home_page_of_hepsiburada_is_displayed() throws InterruptedException {
 		String path = System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver", "/Users/cvsburak/Desktop/chromedriver");
 		ChromeOptions options = new ChromeOptions();
@@ -44,25 +49,29 @@ public class Steps {
 		
 		hp = new HomePage(driver);
 		lp = new LoginPage(driver);
-		productsP = new BoutiquePage(driver);
+		boutiqueP = new BoutiquePage(driver);
 		productP = new ProductPage(driver);
-		driver.get("https://www.hepsiburada.com");
+		basketP = new BasketPage(driver);
+		context = new ScenarioContext();
+		driver.get("https://www.trendyol.com");
+		hp.clickClosePopUp();
 		
+	}
+	
+	@Then("user must me on the home page")
+	public void the_user_on_the_home_page() {
+		Assert.assertEquals("En Trend Ürünler Türkiye'nin Online Alışveriş Sitesi Trendyol'da", driver.getTitle());
 	}
 
 	@When("the user clicks to login button")
 	public void the_user_clicks_to_login_button() throws InterruptedException {
-		hp.clickMyAccount();
-		Thread.sleep(500);
 		hp.clickLogin();
-		Thread.sleep(4000);
 	}
 	
 	
 	@Then("the user on the login page")
 	public void the_user_on_the_login_page() {
-		Assert.assertEquals("Giriş yap", lp.inLoginPage());
-
+		Assert.assertEquals("GIRIŞ YAP", lp.inLoginPage());
 	}
 
 	@When("the user enters username {string} and password {string}")
@@ -74,12 +83,12 @@ public class Steps {
 	@When("Clicks to login button")
 	public void clicks_to_login_button() throws InterruptedException {
 		lp.clickLogin();
-		Thread.sleep(3000);
+		Thread.sleep(500);
 	}
 
 	@Then("User must be on home page and login text should change to {string}")
 	public void user_must_be_on_home_page_and_login_text_should_change_to(String string) {
-		if (driver.getPageSource().contains("Bilgileriniz eksik veya hatalı.")) {
+		if (driver.getPageSource().contains("E-posta adresiniz ve/veya şifreniz hatalı.")) {
 			driver.close();
 			Assert.assertTrue(false);
 		}
@@ -93,118 +102,86 @@ public class Steps {
 		driver.quit();
 	}
 	
-	// ----------------------------- ----------------------- -----------------------
-	@When("the user types {string} to search bar")
-	public void the_user_types_to_search_bar(String item) throws InterruptedException {
-	    hp.setSearchItem(item);
+	
+	    // ADD ITEM TO BASKET STEPS
+	
+	@When("user writes {string} on the search bar")
+	public void writes_on_the_search_bar(String string) throws InterruptedException {
+	    hp.setSearchItem(string);
+	    Thread.sleep(500);
+	}
+
+	@When("clicks the search")
+	public void clicks_the_search() throws InterruptedException {
 	    hp.clickSearch();
-	    Thread.sleep(2000);
 	}
 
-	@Then("the user will be on the {string} page")
-	public void the_user_will_be_on_the_page(String item) {
-		Assert.assertEquals(item, productsP.itemName());
+	@Then("the user on the {string} page")
+	public void the_user_on_the_boutique_page(String string) {
+		Assert.assertEquals(string, boutiqueP.getTitle());
 	}
 
-	@When("the user selects random product on the product and clicks it")
-	public void the_user_selects_random_product_on_the_product() throws InterruptedException {
-	    productsP.clickRandomItem();
-	    Thread.sleep(2000);
+	@When("the user selects random product on the page")
+	public void the_user_selects_random_product_on_the_page() throws InterruptedException {
+	    boutiqueP.clickRandomItem();
 	}
 
-
-	@Then("User must be on products page and can see {string}")
-	public void user_must_be_on_products_page(String string) {
-		Assert.assertEquals(string, productP.sepet());
+	@Then("user must be on the products page")
+	public void user_must_be_on_the_products_page() {
+		Assert.assertEquals("Ürün Bilgileri", productP.getItemInfo());
 	}
 
-	@When("the user adds item to cart")
-	public void the_user_adds_item_to_cart() throws InterruptedException {
-	    productP.addToCart();
-	    Thread.sleep(500);
-	    productP.closePopUp();
-	}
-
-	@When("the user adds item to cart from different seller")
-	public void the_user_adds_item_to_cart_from_different_seller() throws InterruptedException{
-	    try{
-	    	productP.addFromOtherSeller();
-	    } catch(Exception e) {
-	    	Assert.assertTrue("There is no other seller for this item", true);
-	    }
-	    Thread.sleep(500);
-	    try{
-	    	productP.closePopUp();
-	    } catch(Exception e) {
-
-	    }
-	}
-
-	@Then("there are items on the cart")
-	public void there_are_items_on_the_cart() {
-		System.out.println(productP.itemCount());
-	    if (productP.itemCount() == "2") {
-	    	Assert.assertTrue(true);
-	    }
-	    else if (productP.itemCount() == "1") {
-	    	Assert.assertTrue(true);
-	    }
-	    else {
-	    	Assert.assertFalse("You couldn't add item to basket.", false);
-	    }
-		
-
-	}
-
-	//-------------------------- ------------------------------- -----------------------------
-	@When("the user goes to rc section under the hobi tab")
-	public void the_user_goes_to_rc_section_under_the_hobi_tab() throws InterruptedException {
-	    hp.clickHobi();
-	    Thread.sleep(500);
-	    hp.clickRC();
-	}
-
-	@Then("the user will see {string}")
-	public void the_user_will_see(String string) {
-		if (driver.getPageSource().contains(string)) {
-			Assert.assertTrue(true);
-		} else {
-			Assert.assertTrue(false);
-		}
-	}
-
-	@When("the user finds a {string} and clicks it")
-	public void the_user_finds_a_and_clicks_it(String string) throws InterruptedException {
-	    List<WebElement> items = productsP.titleName();
-	    List<WebElement> click_item = productsP.clickItem();
-	    Integer item_count = click_item.size();
-	    Integer i = 1;
-	    Integer page = 2;
-	    while (i < item_count+1) {
-	    	String item = items.get(i).getAttribute("title");
-	    	if (item.contains(string)) {
-	    		click_item.get(i).click();
-	    		
-	    		break;
-	    	}
-	    	
-	    	else if (i == 24) {
-	    		String pageCount = String.format("page-%2d", page);
-	    		driver.findElement(By.className(pageCount)).click();
-	    		i = 1;
-	    		page += 1;
-	    		items = productsP.titleName();
-	    		click_item = productsP.clickItem();
-	    		Thread.sleep(500);
-	    		
-	    	i += 1;
-	    	
-	    	Assert.assertEquals(string, productP.sepet());
-	    	}
+	@When("user adds item to the basket")
+	public void user_adds_item_to_the_basket() throws InterruptedException {
+		String basket = productP.addToCartAvaible();
+	    if (basket.contains("Sepet")){
+	    	productP.addToCart();
+	    	String price = productP.itemPrice();
+		    context.setContext(Context.PRODUCT_PRICE, price);
+		    Thread.sleep(3000);
+	    } else {
+	    	driver.close();
 	    }
 	    
+	}
+
+	@Then("basket count must increased one")
+	public void basket_count_must_increased_one() {
+		Assert.assertEquals("1", productP.itemCount());
+	}
+
+	@When("user clicks the basket and goes to basket page")
+	public void user_clicks_the_basket_and_goes_to_basket_page() throws InterruptedException {
+	    productP.clickBasket();
+	    Thread.sleep(1000);
+	}
+
+	@Then("user must see the value of item price in the products page and the baskets page must be equal")
+	public void prices_equal() {
+		String source = driver.getPageSource();
+		String price = (String) context.getContext(Context.PRODUCT_PRICE);
+		boolean result = source.contains(price);
+		Assert.assertTrue(result);
 	    
 	}
+
+	@When("user increase the product count to two")
+	public void user_increase_the_product_count_to_two() throws InterruptedException {
+	    if (basketP.addOneMoreEnabled()) {
+	    	basketP.addOneMore();
+	    	Thread.sleep(500);
+	    } else {
+	    	Assert.assertTrue(basketP.addOneMoreEnabled());
+	    }
+	}
+
+	@Then("item count must increased to two")
+	public void item_count_must_increased_to_two() {
+		String basket = basketP.productCount();
+		boolean contain = basket.contains("2");
+		Assert.assertTrue(contain);
+	}
+	    
 
 
 

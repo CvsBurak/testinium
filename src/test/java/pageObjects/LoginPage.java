@@ -5,24 +5,29 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.Wait;
+
 public class LoginPage {
 	public WebDriver driver;
+	public Wait wait;
 	
 	public LoginPage(WebDriver rdriver) {
 		driver = rdriver;
 		PageFactory.initElements(rdriver, this);
+		wait = new Wait(rdriver);
 		
 	}
-	 	@FindBy(id = "txtUserName")
+	 	@FindBy(id = "login-email")
 	    WebElement txtUser;
 	    
-	    @FindBy(id = "txtPassword")
+	    @FindBy(id = "login-password-input")
 	    WebElement txtPassword;
 	    
-	    @FindBy(id = "btnLogin")
+	    @FindBy(xpath = "//*[@id='login-register']/div[3]/div[1]/form/button")
 	    WebElement btnLogin;
 	    
 	    public String inLoginPage() {
+	    	wait.WaitForElement(btnLogin, 5);
 	    	return btnLogin.getText();
 	    }
 	    
