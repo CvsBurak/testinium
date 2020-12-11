@@ -98,8 +98,8 @@ public class Steps {
 
 	@Then("User must be on home page and login text should change to {string}")
 	public void user_must_be_on_home_page_and_login_text_should_change_to(String string) {
-		if (driver.getPageSource().contains("E-posta adresiniz ve/veya şifreniz hatalı.")) {
-			logger.info("Email or password is wrong, terminating the test");
+		if (driver.getPageSource().contains("E-posta adresiniz ve/veya şifreniz hatalı.") || driver.getPageSource().contains("Lütfen geçerli bir e-posta adresi giriniz.")) {
+			logger.info("Email and password is wrong or empty, terminating the test");
 			driver.close();
 			Assert.assertTrue(false);
 		}
