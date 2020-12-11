@@ -4,6 +4,11 @@ import static org.junit.Assert.assertThat;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.List;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import org.hamcrest.Matcher;
 import org.openqa.selenium.By;
@@ -11,6 +16,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 import enums.Context;
 import io.cucumber.java.en.*;
@@ -21,8 +28,9 @@ import pageObjects.ProductPage;
 import pageObjects.BoutiquePage;
 import pageObjects.BasketPage;
 import utilities.ScenarioContext;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+import utilities.CSVUtils;
+
+
 
 public class Steps {
 	
@@ -157,7 +165,23 @@ public class Steps {
 	    	productP.addToCart();
 	    	String price = productP.itemPrice();
 		    context.setContext(Context.PRODUCT_PRICE, price);
-		    Thread.sleep(3000);
+		    
+		List<String> info = new ArrayList<>();
+            	info.add(productP.itemName());
+            	info.add(price);
+            
+		try {
+	        	String csvFile = "/Users/cvsburak/Desktop/testinium/trendyol/output.csv";
+			FileWriter writer = new FileWriter(csvFile);
+			CSVUtils.writeLine(writer, info);
+				
+			writer.flush();
+		        writer.close();
+		} catch (IOException e) {
+				
+			e.printStackTrace();
+		}
+		Thread.sleep(3000);
 	    } else {
 	    	logger.info("Product is not avaible to buy, terminating the test");
 	    	driver.close();
