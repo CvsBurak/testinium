@@ -157,6 +157,7 @@ public class Steps {
 
 	@When("user adds item to the basket")
 	public void user_adds_item_to_the_basket() throws InterruptedException {
+		Thread.sleep(1000);
 		logger.info("Checking if the product is avaible to buy");
 		String basket = productP.addToCartAvaible();
 		System.out.print(basket);
