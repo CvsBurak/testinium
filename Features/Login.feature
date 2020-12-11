@@ -15,5 +15,5 @@ Feature: trendyol Shopping
     Then Close driver
 
     Examples:
-      | username                    | password   |
-      | burak-cavusoglu@hotmail.com | 159753brk |
+      | username    | password        |
+      | invalidUser | invalidPassword |
